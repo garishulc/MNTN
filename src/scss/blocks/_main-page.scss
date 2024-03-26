@@ -1,0 +1,53 @@
+.main-page {
+  padding: 205px 0 843px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  &__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 88px;
+    font-family: var(--font-accent-semibolt);
+    margin-bottom: 55px;
+    span {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__sccroll-down {
+    font-size: 18px;
+    font-family: var(--font-main);
+    display: flex;
+    gap: 16px;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.8, -0.8, 0.265, 1.55); /* easeInOutBack */
+
+    svg {
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* easeInOutBack */
+    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   inset: -2px;
+    // }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover > svg {
+        fill: var(--link-hover);
+      }
+      &:hover {
+        transform: translateY(-20%) translateX(0%);
+        color: var(--link-hover);
+      }
+    }
+  }
+}
+.icon {
+}
+.arrow_down_white {
+}

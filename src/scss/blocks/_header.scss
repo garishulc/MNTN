@@ -1,0 +1,62 @@
+.header {
+	background-color: rgba($color: #000000, $alpha: 0);
+	padding: 65px 0 50px 0;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (hover: hover) and (pointer: fine) {
+			a,
+			svg {
+				transition: all 0.5s ease;
+			}
+			a:hover {
+				color: var(--link-hover);
+			}
+			a:hover > svg {
+				fill: var(--link-hover);
+			}
+		}
+	}
+	&__account a {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-weight: bold;
+		font-size: 18px;
+		gap: 10px;
+		position: relative;
+		isolation: isolate;
+	}
+	&__account a::before {
+		content: "";
+		position: absolute;
+		inset: -2px;
+		z-index: 1;
+	}
+}
+.header__logo {
+	font-size: 32px;
+	font-family: var(--font-accent-bolt);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+// .header__nav {
+// 	@include tablet {
+// 		display: none;
+// 	}
+// }
+
+.header__nav {
+}
+.nav {
+	font-size: 18px;
+}
+.nav__list {
+	font-weight: bold;
+	display: flex;
+	column-gap: 40px;
+}
+.active {
+}

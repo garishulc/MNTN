@@ -1,0 +1,33 @@
+//обертка для документации
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	//прозрачная заливка и прозрачный цвет обводки
+	fill: transparent;
+	stroke: transparent;
+	width: 62px;
+	height: 62px;
+}
+//по модификатору добавляем либо fill
+//либо stroke
+.account-icon {
+	width: 20px;
+	height: 20px;
+	fill: rgb(255, 255, 255);
+}
+
+.arrow-down-white {
+	fill: rgb(255, 255, 255);
+	// stroke: rgb(255, 255, 255);
+	height: 24px;
+	width: 16px;
+}
+.arrow-right-gold {
+	fill: var(--link-hover);
+	height: 24px;
+	width: 16px;
+}

@@ -1,0 +1,21 @@
+//миксины
+// для добавления миксина пишем @icnlude название миксина
+
+//миксины пишем по образцу
+@mixin mediaBg() {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (max-width: 1220px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 820px) {
+		@content;
+	}
+}

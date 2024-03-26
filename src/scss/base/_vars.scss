@@ -1,0 +1,25 @@
+:root {
+	--container-header: 1790px;
+	--container-width: 1492px;
+	--container-padding: 15px;
+
+	--font-main: "Gilroy";
+	--font-accent-semibolt: "Chronicle Display Semibold";
+	--font-accent-bolt: "Chronicle Display Bold";
+	--font-titles: var(--font-accent-semibolt);
+	--font-subtitles: var(--font-main);
+
+	--page-bg: #fff;
+	--text-color: #ffffff;
+	--text-accent: #fbd784;
+	--link-hover: #fbd784;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
