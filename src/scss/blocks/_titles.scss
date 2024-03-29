@@ -1,14 +1,14 @@
 .title-1 {
 	font-size: 88px;
 	font-weight: 400;
-	line-height: 100%;
+	line-height: 1.1;
 	font-family: var(--font-titles);
 }
 
 .title-2 {
-	margin: 1em 0 0.5em;
+	margin: 0 0 27px;
 	font-size: 64px;
-	line-height: 1;
+	line-height: 1.2;
 	font-weight: 400;
 	font-family: var(--font-titles);
 }
@@ -21,10 +21,10 @@
 }
 
 .title-4 {
-	margin: 1em 0 0.5em;
-	font-size: 18px;
+	line-height: 32px;
+	font-size: 24px;
 	font-weight: 700;
-	font-family: var(--font-titles);
+	font-family: var(--font-subtitles);
 }
 
 .sub-title {
@@ -49,4 +49,10 @@
 		width: 72px;
 		height: 2px;
 	}
+}
+.logo {
+	font-size: 32px;
+	font-family: var(--font-accent-bolt);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }

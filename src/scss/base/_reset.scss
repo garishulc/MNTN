@@ -46,7 +46,12 @@ p {
 	margin-block-start: 0px;
 	margin-block-end: 0px;
 }
-
+p,
+a,
+li,
+ol {
+	font-size: 18px;
+}
 ul,
 ul li {
 	list-style: none;
@@ -73,7 +78,7 @@ textarea,
 button,
 select {
 	font-family: inherit;
-	font-size: inherit;
+	font-size: 18px;
 	color: inherit;
 	background-color: transparent;
 }
