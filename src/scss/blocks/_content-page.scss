@@ -1,28 +1,74 @@
 .article-block {
+  max-width: 100%;
   & p {
     font-size: 18px;
     line-height: 32px;
     font-family: var(--font-main);
     font-weight: 700;
     margin-bottom: 40px;
+    @media (max-width: 1260px) {
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
   }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+
   &__content {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 114px;
-    margin-bottom: 200px;
+    gap: 30px;
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     &:nth-child(even) {
       flex-direction: row-reverse;
+      gap: 114px;
+      @media (max-width: 1260px) {
+        gap: 30px;
+      }
     }
-    &:nth-child(odd) {
-      padding-left: 150px;
+  }
+  &__text-block-desctop {
+    @media (max-width: 599px) {
+      display: none;
+    }
+  }
+  &__text-block-mobile {
+    @media (min-width: 599px) {
+      display: none;
     }
   }
   &__text {
+    flex: 1 1 50%;
     max-width: 632px;
     position: relative;
-
+    padding-left: 114px;
+    @media (max-width: 1260px) {
+      flex: 1 1 48%;
+    }
+    & .wrapper-subtitle {
+      @media (max-width: 1260px) {
+        max-width: 245px;
+      }
+      @media (max-width: 599px) {
+        max-width: 200px;
+      }
+    }
+    // & .sub-title {
+    //   @media (max-width: 1260px) {
+    //     max-width: 320px;
+    //   }
+    // }
+    @media (max-width: 1260px) {
+      padding-left: 65px;
+    }
     &::before {
       display: block;
       content: attr(data-number);
@@ -34,7 +80,18 @@
       font-size: 240px;
       line-height: 1;
       position: absolute;
-      transform: translateY(-42%) translateX(-63%);
+      transform: translateY(-42%) translateX(-50%);
+      @media (max-width: 1260px) {
+        font-size: 140px;
+        width: 140px;
+        height: 150px;
+      }
+    }
+  }
+  &__img {
+    flex: 1 1 52%;
+    @media (max-width: 1260px) {
+      flex: 1 1 51%;
     }
   }
   &__scrool-more {
@@ -63,8 +120,11 @@
   margin-bottom: 40px;
 }
 .sub-title {
-  display: block;
+  display: inline-block;
   margin-bottom: 27px;
+  @media only screen and (max-width: 1260px) {
+    margin-bottom: 15px;
+  }
 }
 .sub-title-line {
 }

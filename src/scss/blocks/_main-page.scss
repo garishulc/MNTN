@@ -1,11 +1,18 @@
 .main-page {
-  padding: 205px 0 843px 0;
-
+  padding-top: 10%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  @media (hover: hover) and (pointer: fine) {
+  }
+  @media (max-width: 1260px) {
+    padding-bottom: 300px;
+  }
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 980px;
-    margin: 0 auto;
   }
   &__title {
     position: relative;
@@ -18,7 +25,6 @@
       margin-bottom: 50px;
     }
   }
-
   &__sccroll-down {
     max-width: 150px;
     font-size: 18px;

@@ -1,5 +1,6 @@
 :root {
 	--container-header: 1790px;
+
 	--container-width: 1492px;
 	--container-padding: 15px;
 
@@ -13,10 +14,18 @@
 	--text-color: #ffffff;
 	--text-accent: #fbd784;
 	--link-hover: #fbd784;
-
-	--laptop-size: 1199px;
+	//переменные для медиазапросов
+	// --laptop-size: 1199px;
+	// --tablet-size: 959px;
+	// --mobile-size: 599px;
+	--laptop-size: var(--container-width);
 	--tablet-size: 959px;
 	--mobile-size: 599px;
+	//переменный для медиазапросов
+	$laptop-size: var(--container-width);
+	$large-tablet-size: 991.98px;
+	$tablet-size: 767.98px;
+	$mobile-size: 479.98px;
 }
 
 .dark {
