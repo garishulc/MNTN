@@ -1,5 +1,5 @@
 .main-page {
-  padding-top: 10%;
+  padding-top: 30%;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,8 @@
   overflow: hidden;
   @media (hover: hover) and (pointer: fine) {
   }
-  @media (max-width: 1260px) {
-    padding-bottom: 300px;
+  @media (min-width: 1024px) {
+    padding-bottom: 10%;
     padding-top: 0%;
     justify-content: center;
   }
