@@ -75,7 +75,7 @@ gulp.task('html:dev', function () {
 			webpHTML({
 				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
 				retina: {
-					1: '',
+					// 1: '',
 					// 2: '@2x',
 				},
 			})
